@@ -1,0 +1,108 @@
+/*-----------------------------------------------
+            EMESH- EMAIL STYLES
+-----------------------------------------------*/
+
+/*  RESET  */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*  VARIABLES  */
+  $white: #fff;
+  $gris-01: #f8f8f8;
+  $gris-02: #444;
+  $gris-03: #232323;
+  $gris-04: #646464;
+  $gris-05: #f0f0f0;
+  $azul-01: #3838d4;
+
+  $bg-body: $gris-01;
+  $font-family: Arial, Helvetica, sans-serif;;
+  $text-color: $gris-02;
+  $headings-color: $gris-03;
+  $footer-color: $gris-04;
+  $link-color: $azul-01;
+  $border-gris: $gris-05;
+
+/* GENERAL */
+body{
+  background: $bg-body;
+  font-family: $font-family;
+  font-size: 15px;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headings-color;
+  font-weight: bold;
+  margin-bottom: 1.6em;
+}
+h1 { font-size: 25px;  }
+h2 { font-size: 20px;  }
+h3 { font-size: 18px;  }
+h4 { font-size: 16px;  }
+h5 { font-size: 14px;  }
+h6 { font-size: 12px;  }
+
+a {
+  color: $link-color;
+  &:hover{
+    color: lighten($link-color, 5%)
+  }
+}
+p {
+  margin-bottom: 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+/*  WRAPPER   */
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+/*  HEADER   */
+.header{
+  background-color: black;
+  vertical-align: middle;
+  padding: 16px 30px;
+  border: 1px solid black;
+  .logo {
+    display: block;
+    height: 30px; 
+  }
+}
+/*  MAIN CONTENT   */
+.main-content{
+  background: $white;
+  padding: 30px;
+  border: 1px solid $border-gris;
+  border-top: none;
+  .title {
+    text-align: center;
+  }
+  hr {
+    background: $border-gris;
+    height: 1px;
+    margin: 40px auto;
+  }
+  .logo-evento {
+    max-width: 350px;
+    display: block;
+    margin: 15px auto auto;
+  }
+}
+/*  FOOTER   */
+.footer{
+  padding: 30px;  
+  font-size: 12px;
+  color: $footer-color;
+}
